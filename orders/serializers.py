@@ -5,5 +5,5 @@ from .models import Order
 class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
-        fields = '_all_'
+        fields = '__all__'
         read_only_fields = ['user', 'status', 'payment_status']
